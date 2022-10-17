@@ -1,6 +1,6 @@
 from enum import Enum
 
-class Instruments(Enum):
+class SFX(Enum):
     # These instruments appear in the same order they're shown on thirtydollar.website.
     # Personally, I disagree with some of the placements, but I didn't organize them so it's not my fault.
     # I also disagree with some of the names and have changed them to either be shorter or funnier.
@@ -11,7 +11,7 @@ class Instruments(Enum):
     TACO_BELL = "bong"
     # Emoji
     MC_SKELETON_HURT = "💀"
-    RD_CLAP = "👏"
+    CLAP = "👏"
     WHAT_DA_DOG_DOIN = "🐶"
     MC_CAVE = "👽"
     PING = "🔔"
@@ -34,12 +34,12 @@ class Instruments(Enum):
     HONK = "🦢" # This character pretty much completely breaks IDLE. I blame you, GDColon.
     GUN_RELOAD = "gun"
     HITMARKER = "hitmarker"
-    *CLICK*_NOICE = "👌"
+    CLICK_NOICE = "👌"
     MR_KRAAAAAAAABS = "🦀"
     HOO = "gnome"
     YOU_SPIN_ME_RIGHT_ROUND_BABY = "💿" # This one too
     TADAAA = "🎉"
-    WHAT_THE_FUCK_WAS_THAT = "🎻"
+    WHAT_THE_HELL_WAS_THAT = "🎻"
     # Things hitting things
     PAN = "pan"
     SLIP = "slip"
@@ -48,7 +48,7 @@ class Instruments(Enum):
     # Samsung
     SAMSUNG_NOTIFICATION = "📲"
     SAMSUNG_ALARM = "🌄"
-    SAMSUNG_WHISLE = "whatsapp"
+    SAMSUNG_WHISTLE = "whatsapp"
     # Dramatic stings and a pufferfish
     OH_NO = "😱"
     AIRHORN = "airhorn"
@@ -88,7 +88,7 @@ class Instruments(Enum):
     SMM_SCREAM = "smm_scream" # This is the ONLY Super Mario Maker sound on the site.
     # Mario Paint
     MP_MARIO = "mariopaint_mario"
-    SMW_LUIGI = "mariopaint_luigi" # This one is with the rest of the Mario Paint SFX and is called "mariopaint_luigi" internally, but its title on thirtydollar.website is "Steel Drum (Super Mario World)" and that's what it sounds like. Why is it with Mario Paint? We may never know.
+    SMW_STEEL_DRUM = "mariopaint_luigi" # This one is with the rest of the Mario Paint SFX and is called "mariopaint_luigi" internally, but its title on thirtydollar.website is "Steel Drum (Super Mario World)" and that's what it sounds like. Why is it with Mario Paint? We may never know.
     SMW_YOSHI = "smw_yoshi" # THIS one, however, is straight from Super Mario World AND even has an internal ID reflecting that, but on thirtydollar.website it's named "Yoshi (Mario Paint)". Why???
     MP_STAR = "mariopaint_star"
     MP_FLOWER = "mariopaint_flower"
@@ -141,4 +141,157 @@ class Instruments(Enum):
     RH_WIDGET = "builttoscale" # What does this MEAN???
     RH_PERFECT_FAIL = "perfectfail"
     RH_SKILL_STAR = "🌟"
-    
+    # Funky Friday
+    FNF_LEFT = "fnf_left"
+    FNF_DOWN = "fnf_down"
+    FNF_UP = "fnf_up"
+    FNF_RIGHT = "fnf_right"
+    FNF_FAIL = "fnf_death"
+    # Geometry Dash
+    GD_CRASH = "gdcrash" # WHY NO SPACE???
+    GD_CRASH_MANA_ORBS = "gdcrash_orbs"
+    GD_SECRET_COIN = "gd_coin"
+    GD_MANA_ORBS = "gd_orbs"
+    GD_DIAMOND = "gd_diamonds"
+    GD_QUIT = "gd_quit"
+    GD_BWOMP = "bwomp" # "Blast Processing" on the site
+    # Undertale and Deltarune
+    UT_HIT = "undertale_hit"
+    UT_GAMEOVER = "undertale_crack" # ???
+    SANS = "sans_voice"
+    MEGALOVANIA = "megalovania"
+    MEGALOVANIA_NOTE = "🦴"
+    UT_ENCOUNTER = "undertale_encounter"
+    UT_BORK = "toby" # This one does kinda make sense, I guess
+    UT_VANISH = "gaster" # This one makes less sense.
+    DR_SPLAT = "lancer_splat"
+    # The Binding of Isaac
+    ISAAC_HURT = "isaac_hurt"
+    ISAAC_DEAD = "isaac_dead"
+    HOLY_MANTLE = "isaac_mantle"
+    # BABA IS YOU
+    BABA_MOVE = "BABA"
+    BABA_RULE = "YOU" # ?????
+    BABA_DEFEAT = "DEFEAT"
+    # vvvvvv
+    VVVVVV_FLIP = "vvvvvv_flip"
+    VVVVVV_HURT = "vvvvvv_hurt" # Just called "sad" on the site for some reason
+    VVVVVV_CHECKPOINT = "vvvvvv_checkpoint"
+    VVVVVV_FLASH = "vvvvvv_flash"
+    # Terraria
+    TERRARIA_STAR = "terraria_star"
+    TERRARIA_SHATTER = "terraria_pot"
+    TERRARIA_REFORGE = "terraria_reforge"
+    TERRARIA_GUITAR = "terraria_guitar"
+    TERRARIA_HEAVY_GUITAR = "terraria_axe"
+    # Celeste
+    CELESTE_DASH = "celeste_dash"
+    CELESTE_DEATH = "celeste_death"
+    CELESTE_SPRING = "celeste_spring"
+    CELESTE_DASH_DIAMOND = "celeste_diamond"
+    # AMOGUS
+    EMERGENCY_MEETING = "amogus_emergency"
+    AMOGUS_KILL = "amogus_kill"
+    AMONGUS = "amongus"
+    AMOGUS_DRIP = "amongdrip"
+    AMOGUS = "amogus"
+    # Minecraft
+    MC_KABLOOEY = "minecraft_explosion"
+    MC_ANVIL = "minecraft_anvil"
+    MC_BELL = "minecraft_bell"
+    # Minecraft noteblocks
+    NB_HARP = "noteblock_harp"
+    NB_BASS = "noteblock_bass"
+    NB_SNARE = "noteblock_snare"
+    NB_CLICK = "noteblock_click"
+    NB_BELL = "noteblock_bell"
+    NB_BANJO = "noteblock_banjo"
+    NB_BIT = "noteblock_bit"
+    NB_CHIME = "noteblock_chime"
+    NB_XYLOPHONE = "noteblock_xylophone"
+    NB_GUITAR = "noteblock_guitar"
+    NB_FLUTE = "noteblock_flute"
+    NB_PLING = "noteblock_pling"
+
+MIDI_TO_SFX_PRE = {
+    # Pianos
+    (1, 2, 3, 4): SFX.NB_PLING,
+    (5, 6): SFX.UT_ENCOUNTER,
+    (7, 8): SFX.NB_HARP,
+    # Chromatic Percussion
+    (10,): SFX.GD_DIAMOND,
+    (9, 11, 12): SFX.MC_BELL,
+    (13, 14): SFX.TERRARIA_REFORGE,
+    (15, 16): SFX.DING,
+    # Organs
+    (17, 18, 19, 20, 21, 22, 24): SFX.EMERGENCY_MEETING,
+    (23,): SFX.MP_BABBY,
+    # Guitars
+    (25, 26): SFX.WHAT_THE_HELL_WAS_THAT,
+    (27, 28, 29): SFX.MP_PLANE,
+    (30, 31, 32): SFX.MP_SWAN,
+    # Bass
+    (33, 34, 35): SFX.WHAT_THE_HELL_WAS_THAT,
+    (36, 37, 38): SFX.SMW_BOSS_STOMP,
+    (39, 40): SFX.MEGALOVANIA_NOTE,
+    # Strings
+    (41, 42, 43, 44): SFX.SM64_OUCHY,
+    (45, 46, 48): SFX.MP_STAR,
+    (47,): SFX.NB_HARP,
+    # Ensemble
+    (49, 50, 51, 52): SFX.MP_STAR,
+    (53,): SFX.AMOGUS,
+    (54,): SFX.OOF,
+    (56,): SFX.SANS,
+    (55,): SFX.AMONGUS,
+    # Brass
+    (57, 60, 61, 62): SFX.SM64_BUP,
+    (58,): SFX.AIRHORN,
+    (59,): SFX.HOO,
+    (63, 64): SFX.UT_VANISH,
+    # Reed
+    (65, 66, 67, 68, 69): SFX.ULTRA_INSTINCT,
+    (70,): SFX.SM64_BUP,
+    (71, 72): SFX.SM64_THWOMP,
+    # Pipe
+    (73, 74, 76): SFX.UT_BORK,
+    (75,): SFX.VVVVVV_HURT,
+    (77, 78, 80): SFX.TERRARIA_SHATTER,
+    (79,): SFX.SAMSUNG_WHISTLE,
+    # Synth leads
+    (81, 82, 83, 84, 85, 87): SFX.SMW_1UP,
+    (86,): SFX.SM64_BUP,
+    (88,): SFX.SMW_STEEL_DRUM,
+    # Synth pads
+    (89, 90, 91): SFX.TWANY_WAN,
+    (92, 95): SFX.SMM_SCREAM,
+    (93, 94, 96): SFX.BRUH,
+    # Synth effects
+    (97,): SFX.RD_SHAKE,
+    (98,): SFX.YODA_DIES,
+    (99, 100, 101, 103, 104): SFX.MC_CAVE,
+    (102,): SFX.SUBALUWA,
+    # Ethic
+    (105, 106, 107, 108, 109, 110, 111, 112): SFX.PAN, # Forgot to ask lyxal for these, whoops! :b
+    # Percussive
+    (113, 114): SFX.MC_BELL,
+    (115,): SFX.SMW_STEEL_DRUM,
+    (116,): SFX.RD_TONK,
+    (118,): SFX.RD_TOM_DRUM,
+    (117, 119): SFX.RD_DRUM,
+    (120,): SFX.PUFFERFISH_AUGH,
+    # Sound effects
+    (121,): SFX.MP_DOG,
+    (122,): SFX.YODA_DIES, # That's what breathing sounds like, right? Yoda dying?
+    (123,): SFX.ADOFAI_ICE,
+    (124,): SFX.SAMSUNG_WHISTLE,
+    (125,): SFX.SCREAMING_DOG, # The ideal ringtone
+    (126,): SFX.MR_KRAAAAAAAABS,
+    (127,): SFX.CLAP,
+    (128,): SFX.HITMARKER
+}
+MIDI_TO_SFX = {}
+# Janky ass conversion
+for instruments in MIDI_TO_SFX_PRE:
+    for instrument in instruments:
+        MIDI_TO_SFX[instrument] = MIDI_TO_SFX_PRE[instruments]
