@@ -2,7 +2,7 @@ import argparse
 import mido
 from tcs import translate
 
-parser = argparse.ArgumentParser(prog="tcs", description="Translate a MIDI file to THIRTY DOLLAR FORMAT")
+parser = argparse.ArgumentParser(prog="tcs", description="Thirty Cent Synth: Translate a MIDI file to THIRTY DOLLAR FORMAT")
 parser.add_argument("input", help="The input MIDI file")
 
 def main():

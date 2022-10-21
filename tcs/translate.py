@@ -33,9 +33,10 @@ def translate(midi):
     #print("We've got {} messages to translate".format(len(d)))
     result = [SpeedInstruction(Mode.SET, 120)] # Default bpm
     oldVelocity = 64
-    i = set()
+    print("Translation in progress")
+    control = 1
+    dv = 0
     while not all(p.done for p in players):
-        control = 1
         for message in itertools.chain.from_iterable(p.messages() for p in players):
             if message.type == "note_on":
                 pitch = message.note - 69 # assuming the base is 'concert a'
@@ -57,7 +58,9 @@ def translate(midi):
 
         for p in players:
             p.step(step)
-            
-    print("OK, done")
+        dv += 1
+        if dv % 3 == 0:
+            result.append(SeparatorInstruction())
+    print("Translated", dv, "instructions")
 
     return result

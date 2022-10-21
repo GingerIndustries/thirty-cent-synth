@@ -265,7 +265,9 @@ MIDI_TO_SFX_PRE = {
     # Synth pads
     (89, 90, 91): SFX.TWANY_WAN,
     (92, 95): SFX.SMM_SCREAM,
-    (93, 94, 96): SFX.BRUH,
+    (93,): SFX.SMW_YOSHI,
+    (94,): SFX.TERRARIA_STAR,
+    (96,): SFX.TADAAA,
     # Synth effects
     (97,): SFX.RD_SHAKE,
     (98,): SFX.YODA_DIES,

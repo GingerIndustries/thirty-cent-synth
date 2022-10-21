@@ -38,3 +38,6 @@ class StopAllInstruction(Instruction):
 class CombineInstruction(Instruction):
     def __init__(self):
         super().__init__("!combine", [])
+class SeparatorInstruction(Instruction):
+    def __init__(self):
+        super().__init__("!divider", [])
