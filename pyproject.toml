@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "thirty-cent-synth"
+version = "0.1.0"
+description = "DON'T YOU LECTURE US WITH YOUR THIRTY CENT MUSIC FORMAT TRANSLATOR"
+authors = ["GingerIndustries <75683114+GingerIndustries@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "tcs"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+mido = "^1.2.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
